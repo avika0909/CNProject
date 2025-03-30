@@ -1,0 +1,86 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #0c4160 ;/* Dark background */
+    color: white; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the entire container */
+    z-index: -1; /* Places the video behind the form */
+}
+
+.choice-container {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px); /* Blur effect */
+    max-width: 600px;
+    height: 250px;
+    width: 100%;
+}
+
+.choice-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.choice-container p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px; /* Rounded buttons */
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 2px solid transparent;
+}
+
+.learn-btn {
+    background-color: rgb(122, 189, 212); /* Accent color */
+    color: #022538; /* Dark text */
+}
+
+.learn-btn:hover {
+    background-color: transparent;
+    border-color: rgb(122, 189, 212);
+    color: rgb(122, 189, 212);
+}
+
+.quiz-btn {
+    background-color: transparent;
+    border-color: rgb(122, 189, 212);
+    color: rgb(122, 189, 212);
+}
+
+.quiz-btn:hover {
+    background-color: rgb(122, 189, 212);
+    color: #19465f;
+}
+ 

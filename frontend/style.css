@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(122, 189, 212);
+    color: white;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.container {
+    padding: 5px 10%;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #262626;;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%; /* Add padding for better spacing */
+    z-index: 1000; /* Ensure nav is above other content */
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px; /* Adjust spacing between menu items */
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0c4160; /* Change color on hover */
+}
+
+nav ul li::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #0c4160;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    display: block;
+    transition: width 0.3s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+/* Header Text */
+.headerText {
+    margin-left: 10%;
+    margin-top: 20%;
+    font-size: 50px;
+}
+
+.headerText h1 {
+    font-size: 70px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.headerText h1 span {
+    color: #0c4160;
+}
+
+/* Button */
+.container .btn {
+    margin-top: 40px;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 5px solid black;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 38%;
+}
+
+.container .btn:hover {
+    background-color: #0c4160;
+    color: white;
+}
+
+.headerimg {
+    flex: 1; /* Take up available space */
+    text-align: right; /* Align content to the right */
+    margin-left: 60%;
+    margin-top: -20%;
+    margin-right: 0;
+    overflow: hidden; /* Ensure video doesn't overflow */
+}
+
+.headerimg video {
+    max-width: 100%;
+     /* Limit video width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure video covers the container */
+    display: block; /* Remove extra spacing below the video */
+}
+
+/* Hide video controls and timing */
+.headerimg video::-webkit-media-controls {
+    display: none !important;
+}
+
+.headerimg video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+.headerimg video::-webkit-media-controls-panel {
+    display: none !important;
+}
+
+.headerimg video::-webkit-media-controls-play-button,
+.headerimg video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+}
+.about {
+    margin-top: 80px; /* Top margin */
+    font-size: 20px; /* Font size */
+    margin-bottom: 20px; /* Bottom margin */
+    padding: 20px; /* Padding around the content */
+    line-height: 1.6; /* Line height for better readability */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: 1.1s;
+}
+.about:hover{
+    background-color: #0c4160;
+}

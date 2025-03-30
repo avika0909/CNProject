@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplayer Game</title>
+    <link rel="stylesheet" href="multiplayer.css">
+</head>
+<body>
+    <h1>Multiplayer Game</h1>
+
+    <div id="lobby">
+        <button onclick="createRoom()">Create Game</button>
+        <input type="text" id="gameCodeInput" placeholder="Enter Game Code">
+        <button onclick="joinGame()">Join Game</button>
+        <p id="roomCodeDisplay"></p>
+    </div>
+
+    <div id="gameArea" style="display: none;">
+        <h2 id="status">Waiting for players...</h2>
+        <button id="startGame" onclick="startGame()" style="display: none;">Start Game</button>
+        <p id="winnerDisplay"></p>
+    </div>
+
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+    <script src="multiplayer.js"></script>
+</body>
+</html>

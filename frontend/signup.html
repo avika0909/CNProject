@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Form</title>
+  <link rel="stylesheet" href="signup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="signup-container">
+    <!-- Background Video -->
+    <video autoplay muted loop class="background-video">
+      <source src="images/signup.mp4" type="video/mp4">
+      <source src="videos/background-video.webm" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Form Wrapper -->
+    <div class="form-wrapper">
+      <h2>Create Your Account</h2>
+      <p>Join us and start your journey today!</p>
+      <form id="signupForm" class="form">
+        <div class="input-group">
+          <input type="text" id="username" placeholder=" " required>
+          <label for="username">Username</label>
+        </div>
+        <div class="input-group">
+          <input type="email" id="email" placeholder=" " required>
+          <label for="email">Email</label>
+        </div>
+        <div class="input-group">
+          <input type="password" id="password" placeholder=" " required>
+          <label for="password">Password</label>
+        </div>
+        <div class="input-group">
+          <input type="password" id="confirm-password" placeholder=" " required>
+          <label for="confirm-password">Confirm Password</label>
+        </div>
+        <a href="select.html" class="submit-btn">Sign Up <i class="fas fa-arrow-right"></i></a>
+      </form>
+      <div class="footer">
+        <p>Already have an account? <a href="login.html" id="login-link">Login</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

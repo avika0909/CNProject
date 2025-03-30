@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Quiz</title>
+    <link rel="stylesheet" href="select.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="images/signup.mp4" type="video/mp4">
+            <source src="your-video-file.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Quiz Selection Container -->
+    <div class="quiz-container">
+        <h1>Choose Your Quiz</h1>
+        <!-- <div class="quiz-grid"> -->
+            <div class="quiz-block" id="hindi-to-tamil" onclick="redirectToPage('choose.html')">
+                <h2>Hindi to Tamil Quiz</h2>
+            </div>
+            <div class="quiz-block" id="tamil-to-hindi" onclick="redirectToPage('choose.html')">
+                <h2>Tamil to Hindi Quiz</h2>
+            </div>
+            <div class="quiz-block" id="english-to-tamil" onclick="redirectToPage('choose.html')">
+                <h2>English to Tamil Quiz</h2>
+            </div>
+            <div class="quiz-block" id="english-to-hindi" onclick="redirectToPage('choose.html')">
+                <h2>English to Hindi Quiz</h2>
+            </div>
+        <!-- </div> -->
+    </div>
+
+    <script>
+        function redirectToPage(page) {
+            // Redirect to the specified page
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>

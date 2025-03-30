@@ -1,0 +1,66 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #043149;
+    color: white;
+}
+
+/* Container for the blocks */
+.container {
+    display: flex;
+    gap: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for each block */
+.block {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #081b67, #0d4f70);
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect for blocks */
+.block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #2b67cf, #163b67);
+}
+
+/* Specific style for the Multiplayer block */
+.block.multiplayer {
+    background: linear-gradient(135deg, #081b67, #0d4f70);
+}
+
+/* Hover effect for the Multiplayer block */
+.block.multiplayer:hover {
+    background: linear-gradient(135deg, #2b67cf, #163b67);
+}
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the entire container */
+    z-index: -1; /* Places the video behind the form */
+  }
+  
