@@ -3,26 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multiplayer Game</title>
+    <title>Game Mode Selection</title>
     <link rel="stylesheet" href="multiplayer.css">
 </head>
 <body>
-    <h1>Multiplayer Game</h1>
-
-    <div id="lobby">
-        <button onclick="createRoom()">Create Game</button>
-        <input type="text" id="gameCodeInput" placeholder="Enter Game Code">
-        <button onclick="joinGame()">Join Game</button>
-        <p id="roomCodeDisplay"></p>
+    <video autoplay muted loop class="background-video">
+        <source src="images/signup.mp4" type="video/mp4">
+        <source src="videos/background-video.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+    <div class="container">
+        <div class="block" id="wordGame">Word Mode</div>
+        <div class="block" id="sentenceGame">Sentence Mode</div>
     </div>
-
-    <div id="gameArea" style="display: none;">
-        <h2 id="status">Waiting for players...</h2>
-        <button id="startGame" onclick="startGame()" style="display: none;">Start Game</button>
-        <p id="winnerDisplay"></p>
-    </div>
-
-    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
     <script src="multiplayer.js"></script>
 </body>
 </html>

@@ -31,10 +31,15 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
 }
+p{
+   font-size: 22px;
+   color: white;
+   margin-bottom: 30px; 
+}
 
-p {
-    font-size: 18px;
-    color: #7abdd4;
+.word-list p {
+    font-size: 24px;
+    color: #0c4160;
     margin-bottom: 30px;
 }
 
@@ -83,20 +88,3 @@ p {
     font-size: 18px;
 }
 
-.voice-button {
-    background-color: #0c4160;
-    border: none;
-    color: white;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.voice-button:hover {
-    background-color: #5aa5c4;
-}
-
-.voice-button i {
-    font-size: 18px;
-}

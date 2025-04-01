@@ -1,0 +1,138 @@
+#root {
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem;
+  text-align: center;
+  background-color: #0c4160;
+  color: white;
+}
+
+.join-div {
+  margin: 5% auto;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.join-div:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+input {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(122, 189, 212);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-align: center;
+  transition: 0.3s;
+}
+
+input:hover, input:focus {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: white;
+}
+
+input, .join-btn {
+  margin: 5%;
+  width: 60%;
+  height: 40px;
+  outline: none;
+}
+
+.join-btn {
+  height: auto;
+  background: rgb(122, 189, 212);
+  color: #0c4160;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.join-btn:hover {
+  background: white;
+  color: #0c4160;
+  transform: scale(1.05);
+}
+
+.quiz-div {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  width: 70%;
+  margin: auto;
+  transition: 0.3s;
+}
+
+.quiz-div:hover {
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.room-id {
+  font-size: 20px;
+  margin-top: -30px;
+  color: rgb(122, 189, 212);
+  font-weight: bold;
+}
+
+.question {
+  font-size: 20px;
+  width: 100%;
+  margin: 50px auto;
+  font-weight: bold;
+  color: rgb(122, 189, 212);
+}
+
+.question-text {
+  margin: 5px auto;
+  color: white;
+}
+
+ul {
+  margin: 0 auto;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  border: 1px solid rgb(122, 189, 212);
+  border-radius: 10px;
+  width: 70%;
+  margin: 15px auto;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+li:hover {
+  background: rgb(122, 189, 212);
+  color: #0c4160;
+  transform: scale(1.05);
+}
+
+.options {
+  width: 100%;
+}
+
+.selected {
+  background-color: rgb(122, 189, 212);
+  color: #0c4160;
+  font-weight: bold;
+  transform: scale(1.05);
+}
